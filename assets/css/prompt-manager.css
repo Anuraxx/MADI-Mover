@@ -1,0 +1,5 @@
+.button-container{width: 100%;display: flex;justify-content: center;height: 500px;align-items: center;}
+.button-wrapper{display: flex;}
+.butt{width: 200px;height: 50px;border: 0;}
+.accept{background-color: red;}
+.decline{background-color: greenyellow;}

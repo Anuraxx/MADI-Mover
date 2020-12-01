@@ -1,0 +1,43 @@
+.logo-text{
+    padding: 10px;
+    color: burlywood;
+    
+}
+.madi-text{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+}
+.mover-text-container{
+    width: 100px;height: 40px;
+}
+.upper-cover{
+    background-color: white;
+    width: 0px;
+    height: 50px;
+    top: -45px;
+    position: relative;
+    animation: uncover 3s 1;
+}
+.text{
+    width: 150px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.wheel img{
+    width: 30px;height: 30px;vertical-align: baseline;
+    animation: rotating-wheel 1s linear infinite;
+    animation-delay: 2.5s;
+}
+@keyframes uncover{
+    from{width:150px;left: 0px;}
+    to{width: 0px;left: 150px;}
+}
+@keyframes rotating-wheel{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
+@font-face{
+    font-family: 'Maven Pro';
+    src: url('../fonts/MavenPro') format('truetype');
+  }
+  /* global style ----------------------------------------------------------------------- */
+*{
+    /* font-family: 'Maven Pro','Source Sans Pro', sans-serif !important; */
+}
+
+.rcpt{
+    width: 100%;
+    font-family: 'Maven Pro';
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    padding-top: 70px;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+}
+.rcpt div{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto auto;
+    margin-bottom: 10px;
+}
+.rcpt-header {
+    width: fit-content;
+    text-align: center;
+}
+.rcpt-container {
+    width: 500px;
+    min-height: 500px;
+    box-shadow: 0 0 3px grey;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fdfdfd;
+}
+.vehicle-info-wrapper, .owner-info-wrapper{float: left;width: 50%;}
+
+.vehicle-info-wrapper ul li, .owner-info-wrapper ul li {
+    display: inline-block;
+}
+.vehicle-info-wrapper ul li:first-child, .owner-info-wrapper ul li:first-child{
+    min-width: 100px;
+    color: #66a3bf !important;
+}
+.vehicle-info-wrapper ul li:first-child h6::after, .owner-info-wrapper ul li:first-child h6::after{
+    content: ':';
+    float: right;
+}
+.vehicle-info-wrapper ul li:last-child, .owner-info-wrapper ul li:last-child {
+    width: fit-content;
+    width: 50%;
+}
+.rcpt ul, .rcpt li{
+    padding: 0;
+    margin: 0;
+}
+.rcpt-footer{float: left; width: 90%;}
+
+.info-wrapper {
+    min-height: 280px;
+}
+.rcpt-desc{
+    width: max-content;
+}
+
+.rcpt h4{font-size: 18px;}
+.rcpt h5{font-size: 14px;}
+.rcpt h6{font-size: 12px;}
+
+.rcpt h4, .rcpt h5, .rcpt h6{
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: unset !important;
+} 
+.rcpt ul, .rcpt ol{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width:500px){
+    
+}
